@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>A5: Ajax Interactions</title>
+        </head>
+        <body>
+            <h3>Weather APP</h3>
+            <!-- create a form for CITY_NAME, COUNTRY_CODE-->  
+            <form id='formCity' method="get">          
+                <fieldset>
+                    <legend>City GET request</legend>
+                        <label>Enter City Name:</label>
+                        <input type="text" name="city_name" id="city" placeholder="City name"></br>
+                        <label>Enter Country Code:</label>
+                        <input type="text" name="country_code" id="cityCountryCode" placeholder="Country Code"></br>
+                        <button id="submitCity" class="button">Search</button>
+                </fieldset>
+            </form>
+        </br>
+            <!-- create a form for ZIP_CODE, COUNTRY_CODE-->  
+            <form id='formZip' method="get">          
+                <fieldset>
+                    <legend>Zip GET request</legend>
+                        <label>Enter Zip Code:</label>
+                        <input type="text" name="zip_code" id="zip" placeholder="Zip code"></br>
+                        <label>Enter Country Code:</label>
+                        <input type="text" name="country_code" id="zipCountryCode" placeholder="Country Code"></br>
+                        <button id="submitZip" class="button">Search</button>
+                </fieldset>
+            </form>
+        </br>
+            <h3>POST</h3>
+            <!-- create a form via POST-->
+            <form action="/post" id='formPost' method="post">
+                <fieldset>
+                    <legend>POST request</legend>            
+                        <label>Enter some text:</label>
+                        <input type="text" name="text_input" id="postInput"></br>                        
+                        <button id="submitPost" class="button">Submit</button>
+                </fieldset>          
+            </form>
+
+            <!-- place for results --> 
+            <!-- weather result -->           
+            <h3><div id="resultTitle"></div></h3>
+            <div id="resultCity"></div>
+            <div id="resultCountryCode"></div>
+            <div id="resultTemp"></div>
+            <div id="resultHumidity"></div>
+            <div id="resultWind"></div>
+            <!-- post request result --> 
+            <h3><div id="resultPostTitle"></div></h3>
+            <div id="resultPost"></div>
+
+            <script src="ajax.js"></script>            
+        </body>
+    </html>
