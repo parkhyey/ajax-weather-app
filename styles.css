@@ -1,0 +1,107 @@
+body {
+    font-family: Verdana;
+    background: url('bluesky.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #eee;
+}
+
+#bodyContainer {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+#title {
+    color: #eee;
+}
+
+#resultTitle {
+    color: #eee;
+}
+
+#searchInput {
+    margin-top: 0px;
+}
+
+#tableContainer {
+    display: block;
+    margin: auto;
+    width: 500px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#searchTable {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+}
+
+#searchTable tr td {
+    border: solid 0px;
+}
+
+.leftCol {
+    text-align: right;
+}
+
+.rightCol {
+    text-align: left;
+}
+
+::placeholder {
+    font-family: Calibri, Candara, Segoe;
+    color: #999;
+    font-style: italic;
+}
+
+#submitForm {
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    background-color: #eee;
+    width: 100px;
+    margin-top: 10px;
+    border: solid 1px #999;
+    cursor: pointer;
+    text-align: center;
+}
+
+#submitForm:hover {
+    opacity: 0.8;
+}
+
+#resultContainer {
+    display: none;
+    padding: 20px;
+    margin: auto;
+    width: 500px;
+    border: solid 15px rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+#resultTitle {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Calibri, Candara, Segoe;
+    padding-bottom: 10px;
+}
+
+input[type='text'] {
+    border: solid 0px;
+    border-bottom: solid 1px #eee;
+    background: none;
+    color: #eee;
+}
+
+input[type='text']:focus {
+    outline: none;
+    color: #eee;
+}
+
