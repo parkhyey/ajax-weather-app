@@ -1,9 +1,7 @@
 body {
     font-family: Verdana;
+    z-index: -1;
     background: url('bluesky.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     color: #eee;
 }
@@ -13,14 +11,6 @@ body {
     text-align: center;
     margin: auto;
     width: 100%;
-}
-
-#title {
-    color: #eee;
-}
-
-#resultTitle {
-    color: #eee;
 }
 
 #searchInput {
@@ -86,8 +76,12 @@ body {
     border-radius: 10px;
 }
 
+#resultContainer div {
+    padding: 10px;
+}
+
 #resultTitle {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     font-family: Calibri, Candara, Segoe;
     padding-bottom: 10px;

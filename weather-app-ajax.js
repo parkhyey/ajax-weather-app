@@ -16,6 +16,7 @@ function bindButtons() {
             if (city == '') {
                 showError('Enter a city name!');
             }
+
             else {
                 // make a request to openweathermap API
                 var req = new XMLHttpRequest();
@@ -25,12 +26,16 @@ function bindButtons() {
                 req.open('GET', cityURL, false);
                 req.send(null);
                 var response = JSON.parse(req.responseText);
-
+                // if (err) {
+                //     showError('It is not a valid input. Try again.');
+                // }
                 // if no response per invalid input
                 if (!response.name) {
-                    showError();
+                    showError('It is not a valid input. Try again.');
                 }
-                displayResults(response, city);
+                else {
+                    displayResults(response, city);
+                }
             }
         }
 
@@ -46,10 +51,13 @@ function bindButtons() {
                 req.open('GET', zipURL, false);
                 req.send(null);
                 var response = JSON.parse(req.responseText);
+
                 if (!response.name) {
                     showError('It is not a valid input. Try again.');
                 }
-                displayResults(response, zip);
+                else {
+                    displayResults(response, zip);
+                }
             }
         }
     })
