@@ -15,3 +15,6 @@ The appID used is from https://home.openweathermap.org/users/sign_up.
 
 - The format for the City GET request URL is:</br> http://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid={api key}
 - The format for the Zip GET request URL is:</br> https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={api key}
+
+## App Interface
+![](weather-app.jpg)
